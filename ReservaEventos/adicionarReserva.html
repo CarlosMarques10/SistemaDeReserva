@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar</title>
+    <link  href="assets/style.css"  rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar bg-dark navbar-dark d-flex justify-content-center">
+        <div class="container-fluid">
+            <h2 class="navbar-brand mb-0 h1">Adicionar Reserva</h2>
+        </div>
+        </nav>
+    </header>
+
+    <form method="POST" action="adicionarReserva_action.php" >
+        <div class="mb-3">
+            <input type="text" name="nome" required placeholder="Nome Completo" class="form-control input"><br>
+        </div>
+        <div class="mb-3"> 
+            <input type="tel" name="telefone" required placeholder="Numero de Telefone" class="form-control input"><br>
+        </div>
+        <dv class="mb-3">
+            <input type="text" name="dataEntrada" required placeholder="Data de entrada" class="form-control input"><br>
+        </dv>
+        <div class="mb-3">
+            <input type="text" name="dataSaida" required placeholder="Data de Saida" class="form-control input"><br>
+        </div>
+        <div class="mb-3">
+            <input type="number" name="valorTotal" required placeholder="Valor Total" class="form-control input"><br>
+        </div>
+        <div class="mb-3">
+            <input type="number" name="valorPago"  placeholder="Valor Pago" class="form-control input"><br>
+
+        </div>
+        <input type="submit" value="Adicionar" class="btn btn-success ">
+    </form>
+
+</body>
+</html>
